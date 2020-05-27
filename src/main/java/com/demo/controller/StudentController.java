@@ -30,13 +30,13 @@ public class StudentController {
     }
 
     @PostMapping
-    public void save(@RequestBody Student student) {
-        studentRepository.save(student);
+    public Student save(@RequestBody Student student) {
+        return studentRepository.save(student);
     }
 
     @PutMapping
-    public void update(@RequestBody Student student) {
-        studentRepository.save(student);
+    public Student update(@RequestBody Student student) {
+        return studentRepository.save(student);
     }
 
 }
